@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Garcia Sanchez | ESCOM Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <span class="logo">DG.</span>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="reveal-text">Designing the <span class="gradient-text">Future of AI.</span></h1>
+            <p class="subtitle fade-in">ESCOM Student | AI Enthusiast | Deep Learning Researcher</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary-btn">View Projects</a>
+                <a href="#" class="btn secondary-btn">Download CV</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="projects" class="section">
+            <h2 class="section-title">Showcase</h2>
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai">AI & DL</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+                <button class="filter-btn" data-filter="cv">Vision</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project Card 1: Sargasso -->
+                <div class="project-card" data-category="ai">
+                    <div class="card-bg" style="background-image: url('assets/sargasso.jpg')"></div>
+                    <div class="card-content">
+                        <span class="category-tag">Environmental AI</span>
+                        <h3>Sargasso Detection</h3>
+                        <p>Deep Learning model for environmental monitoring and coastal protection.</p>
+                        <div class="card-footer">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">CNN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: RAG -->
+                <div class="project-card" data-category="ai">
+                    <div class="card-bg" style="background-image: url('assets/rag.jpg')"></div>
+                    <div class="card-content">
+                        <span class="category-tag">NLP / LLM</span>
+                        <h3>RAG System</h3>
+                        <p>Retrieval-Augmented Generation implementation for precise document interrogation.</p>
+                        <div class="card-footer">
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">Vector DB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: Face Recognition -->
+                <div class="project-card" data-category="cv">
+                    <div class="card-bg" style="background-image: url('assets/face.jpg')"></div>
+                    <div class="card-content">
+                        <span class="category-tag">Comp. Vision</span>
+                        <h3>Liveness Face Rec</h3>
+                        <p>Face recognition system with integrated blink detection for anti-spoofing.</p>
+                        <div class="card-footer">
+                            <span class="tech-tag">MTCNN</span>
+                            <span class="tech-tag">PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4: Sudoku AI -->
+                <div class="project-card" data-category="logic">
+                    <div class="card-bg" style="background-image: url('assets/sudoku.jpg')"></div>
+                    <div class="card-content">
+                        <span class="category-tag">Algorithms</span>
+                        <h3>AI Sudoku Solver</h3>
+                        <p>Interactive backtracking visualizer for solving complex grid constraints.</p>
+                        <div class="card-footer">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Backtracking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5: Spam Detection -->
+                <div class="project-card" data-category="security">
+                    <div class="card-bg" style="background-image: url('assets/security.jpg')"></div>
+                    <div class="card-content">
+                        <span class="category-tag">Security / ML</span>
+                        <h3>Spam Shield</h3>
+                        <p>Advanced machine learning classifier for identifying and filtering malicious communication.</p>
+                        <div class="card-footer">
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">NLP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content glass">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body">
+                <!-- Data will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>&copy; 2026 Diego Garcia Sanchez. Built for ESCOM.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
